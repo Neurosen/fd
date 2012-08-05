@@ -5,6 +5,7 @@ var fd = { //flash detector
         if ( typeof navigator.plugins['Shockwave Flash'] !== 'undefined' ) { 
             return true;
         };
+        
         if (window.ActiveXObject) { //checking flash for ie
             try {
                 new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
@@ -12,6 +13,7 @@ var fd = { //flash detector
             } catch (e) {
                 return false;
             };
+            
         return false;
     },
     
