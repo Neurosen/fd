@@ -22,11 +22,13 @@ var fd = { //flash detector
         
         var version = false,
             description;
+            
         if ( typeof navigator.plugins['Shockwave Flash'] !== 'undefined' ) {
             description = navigator.plugins['Shockwave Flash'].description;
             version = description.substring(16, description.length);
             
         }
+        
         return version;
     }
 };
