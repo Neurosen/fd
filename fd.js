@@ -1,4 +1,4 @@
-var fd = { //flash detector
+fd = { //flash detector
 
     isAvailable : function() {//checking flash for browsers
     
