@@ -17,12 +17,13 @@ var fd = { //flash detector
         return false;
     },
     
-    getVersion : function(){
+    getVersion : function() {
         
-        var version=null;
+        var version,description;
         if ( typeof navigator.plugins['Shockwave Flash'] !== 'undefined' ) {
-            var description = navigator.plugins['Shockwave Flash'].description;
+            description = navigator.plugins['Shockwave Flash'].description;
             version = description.substring(16, description.length);
+            
         }
         return version;
     }
