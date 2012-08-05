@@ -26,7 +26,6 @@ var fd = { //flash detector
         if ( typeof navigator.plugins['Shockwave Flash'] !== 'undefined' ) {
             description = navigator.plugins['Shockwave Flash'].description;
             version = description.substring(16, description.length);
-            
         }
         
         return version;
